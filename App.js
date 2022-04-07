@@ -12,6 +12,7 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
+  Image,
 } from 'react-native';
 
 import {
@@ -27,6 +28,12 @@ const App: () => Node = () => {
   return (
     <SafeAreaView style={styles.background}>
       <Text onPress={()=> console.log("Hello fellas!")}>"Hello fellas!"</Text>
+      
+      <Image
+      source={{
+        uri:"https://vignette2.wikia.nocookie.net/lotr/images/8/8d/Gandalf-2.jpg",
+        }}
+      />
     </SafeAreaView>
   );
 };
